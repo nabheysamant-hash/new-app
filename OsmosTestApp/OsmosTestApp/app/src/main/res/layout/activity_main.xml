@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧪 OSMOS SDK Test"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A1A"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Testing banner ad integration"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Status Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📋 Request Parameters"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvClientId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="client_id: 10131833"
+                android:textSize="13sp"
+                android:fontFamily="monospace"
+                android:textColor="#2E7D32"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvCliUbid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cli_ubid: user_123"
+                android:textSize="13sp"
+                android:fontFamily="monospace"
+                android:textColor="#F57C00"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvPageType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="page_type: test-page"
+                android:textSize="13sp"
+                android:fontFamily="monospace"
+                android:textColor="#2E7D32"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvAdUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ad_unit: test-inventory"
+                android:textSize="13sp"
+                android:fontFamily="monospace"
+                android:textColor="#2E7D32"/>
+        </LinearLayout>
+
+        <!-- Status Log Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📡 SDK Status Log"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvStatusLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⏳ Initializing SDK..."
+                android:textSize="13sp"
+                android:fontFamily="monospace"
+                android:textColor="#333333"
+                android:lineSpacingExtra="6dp"/>
+        </LinearLayout>
+
+        <!-- Ad Container Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🖼️ Banner Ad"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- This is the container where OSMOS injects the banner -->
+            <LinearLayout
+                android:id="@+id/bannerAdContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#F0F0F0">
+
+                <TextView
+                    android:id="@+id/tvAdPlaceholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ad will appear here..."
+                    android:textColor="#999999"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
